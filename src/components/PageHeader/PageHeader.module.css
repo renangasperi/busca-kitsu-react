@@ -1,0 +1,42 @@
+:root {
+  --red: #d42026;
+}
+
+.header {
+  color: var(--red);
+  display: flex;
+  font-size: 1rem;
+  margin: 12px 42px 0 42px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: normal;
+  position: relative;
+}
+
+.title::after {
+  background-color: var(--red);
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 54px;
+}
+
+.creator {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .header {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .creator {
+    display: inline;
+  }
+}

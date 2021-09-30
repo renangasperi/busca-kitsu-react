@@ -1,0 +1,9 @@
+:root {
+  --red: #D42026;
+}
+
+.footer {
+  background-color: var(--red);
+  height: 12px;
+  width: 100%;
+}

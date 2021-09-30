@@ -1,0 +1,48 @@
+:root {
+  --red: #d42026;
+  --gray: #A5A5A5;
+  --dark-gray: #4E4E4E
+}
+
+.label {
+  margin: 0 42px;
+  display: block;
+  font-size: 1rem;
+  color: var(--red)
+}
+
+.input {
+  margin: 0 42px;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: 26px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  padding: 0 5px 0 5px;
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+@media (min-width: 576px) {
+  .label {
+    font-size: 0.75rem;
+  }
+
+  .input {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .label {
+    font-size: 0.6rem;
+  }
+
+  .input {
+    height: 31px;
+    font-size: 0.6rem;
+    max-width: 400px;
+  }
+}

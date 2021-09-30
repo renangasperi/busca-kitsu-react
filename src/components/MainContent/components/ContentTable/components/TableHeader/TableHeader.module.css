@@ -1,0 +1,61 @@
+:root {
+  --red: #d42026;
+  --white: #FFFFFFDD;
+}
+
+.container {
+  height: 37px;
+  display: flex;
+}
+
+.tableItem {
+  background-color: var(--red);
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  line-height: 37px;
+  color: var(--white);
+  padding-left: 113px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    margin: 22px 42px 0 42px;
+  }
+
+  .tableItem {
+    font-size: 0.75rem;
+  }
+  
+  .character {
+    width: 40%;
+    margin-right: 10px;
+  }
+
+  .description {
+    width: 60%;
+  }
+
+  .tableItem {
+    padding-left: 20px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin: 34px 42px 0 42px;
+  }
+
+  .tableItem {
+    font-size: 0.6rem;
+  }
+
+  .character {
+    width: 25%;
+  }
+
+  .description {
+    width: 75%;
+  }
+}

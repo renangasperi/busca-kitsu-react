@@ -1,0 +1,15 @@
+.main {
+  margin-top: 16px;
+}
+
+@media (min-width: 576px) {
+  .main {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    margin-top: 38px;
+  }
+}

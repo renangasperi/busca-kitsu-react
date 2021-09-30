@@ -1,0 +1,114 @@
+:root {
+  --red: #d42026;
+  --dark-red: #c11f24;
+  --opaque-black: #000000aa;
+  --white: #ffffff;
+}
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--opaque-black);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+
+.header {
+  height: 60px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.close {
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.close:hover {
+  background-color: var(--dark-red);
+}
+
+.content {
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.participation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 20px 20px 20px;
+}
+
+.participationName {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 200px;
+}
+
+@media (min-width: 576px) {
+  .modal {
+    width: 70%;
+    height: 70%;
+  }
+
+  .header {
+    margin-top: -60px;
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .close {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal {
+    width: 70%;
+    height: 50%;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .close {
+    font-size: 0.7rem;
+  }
+}
